@@ -2,6 +2,7 @@
   font-size: 18px;
 }
 
+/* Header styles */
 header {
   display: flex;
 }
@@ -19,3 +20,22 @@ header {
   flex: 1;
   text-align: right;
 }
+/* end of Header styles */
+
+/* Main content style */
+
+main {
+  min-height: 200px;
+  border: 1px solid black
+}
+
+/* end of Main content style */
+
+/* footer style */
+footer {
+  text-align: center;
+  /* background-image:url('../imgs/headshot.jpg'); */
+}
+
+
+/* end of footer styles */

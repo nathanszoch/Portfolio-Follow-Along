@@ -11,6 +11,10 @@ header {
   flex:1;
 }
 
+.logoImage img{
+width: 100%;
+}
+
 .name {
   flex-grow: 8;
   text-align: center;
@@ -44,7 +48,16 @@ nav:hover ul {
 
 main {
   min-height: 200px;
-  border: 1px solid black;
+  /* border: 1px solid black; */
+}
+
+.profileImage {
+  text-align: center;
+}
+
+.profileImage img {
+  width: 40%;
+  border-radius: 50%;
 }
 
 /* end of Main content style */
@@ -57,11 +70,6 @@ footer {
 
 .socialMedia i {
   padding: 0 .5rem;
-}
-
-.logoImage img{
-width: 50px;
-height: 45px;
 }
 
 /* end of footer styles */

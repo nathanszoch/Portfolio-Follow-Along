@@ -5,21 +5,29 @@
     <meta name="viewport" content="width=device-width", initial-scale=1.0 />
     <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
 
   <body>
       <header>
         <div class="logo">
           <div class="logoImage">
-          <img src="imgs_headshot.jpg" alt="logo image"/>
+          <img src="imgs/logo.png" alt="logo image"/>
           </div>
         </div>
         <div class="name">
           Nathan Szoch
         </div>
+        <nav onclick='$(".menu").toggle();'>
         <div class="navButton">
           &#9776; <!-- results in hamburger -->
         </div>
+        <ul class="menu" style="display:none;">
+          <li>home</li>
+          <li>gallery</li>
+          <li>resume</li>
+        </ul>
+      </nav>
       </header>
 
       <main>

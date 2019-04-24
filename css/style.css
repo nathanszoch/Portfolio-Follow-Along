@@ -16,10 +16,28 @@ header {
   text-align: center;
 }
 
+nav {
+  position: relative;
+  flex:1;
+}
 .navButton {
-  flex: 1;
   text-align: right;
 }
+
+nav ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+}
+
+nav:hover ul {
+  display: block;
+}
+
 /* end of Header styles */
 
 /* Main content style */
@@ -37,5 +55,9 @@ footer {
   /* background-image:url('../imgs/headshot.jpg'); */
 }
 
+.logoImage img{
+width: 50px;
+height: 45px;
+}
 
 /* end of footer styles */

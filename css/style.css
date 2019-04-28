@@ -68,6 +68,7 @@ p {
 
 main {
   min-height: 200px;
+  margin-top: 30px;
   /* border: 1px solid black; */
 }
 
@@ -115,6 +116,22 @@ main {
   align-items: left;
 }
 
+li a {
+  text-decoration: none;
+  color: black;
+}
+
+li a:hover:not(.active) {
+ background-color: #000000;
+ color: #b9c4c5;
+ padding: .25px, .25px;
+}
+
+.nav a:hover {
+ color: #FFFFFF;
+ background-color: #000000;
+ transition: .4s ease;
+}
 
 /* end of Main content style */
 
@@ -128,6 +145,11 @@ footer {
 .socialMedia i {
   padding: 0 .5rem;
   text-align: center;
+}
+
+.contact a {
+  text-decoration: none;
+  color: black;
 }
 
 /* end of footer styles */

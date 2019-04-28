@@ -1,6 +1,3 @@
-* {
-  font-size: 18px;
-}
 
 /* Header styles */
 header {
@@ -16,6 +13,8 @@ width: 100%;
 }
 
 .name {
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
   flex-grow: 8;
   text-align: center;
 }
@@ -24,6 +23,7 @@ nav {
   position: relative;
   flex:1;
 }
+
 .navButton {
   text-align: right;
 }
@@ -36,6 +36,8 @@ nav ul.menu {
   position: absolute;
   right: 0px;
   text-align: right;
+  font-family: mr-eaves-modern, san-serif;
+  font-size: 22px;
 }
 
 nav:hover ul {
@@ -45,6 +47,24 @@ nav:hover ul {
 /* end of Header styles */
 
 /* Main content style */
+.aboutMe {
+  margin-top: -20px;
+  padding-bottom: 20px;
+  padding-left: -15px;
+}
+
+.aboutMe h3 {
+  font-family: mr-eaves-modern, sans-serif;
+  font-size: 28px;
+  letter-spacing: 2px;
+}
+
+p {
+  font-size: 20px;
+  font-family: Raleway, sans-serif;
+  margin-top: -20px;
+  margin-right: 240px;
+}
 
 main {
   min-height: 200px;
@@ -56,15 +76,52 @@ main {
 }
 
 .profileImage img {
-  width: 80%;
+  width: 500px;
+  height: 500px;
   border-radius: 50%;
+  padding: 0px 10px;
 }
+
+.aboutMe hr {
+ margin-right: 240px;
+ margin-top: 50px;
+}
+
+.software {
+  padding-top: 10px;
+}
+
+.software h4{
+  font-family: mr-eaves-modern, sans-serif;
+  font-size: 30px;
+  letter-spacing: 2px;
+  padding: 0px 120px;
+  margin-bottom: 0;
+}
+
+.skills {
+  list-style-type: none;
+  display: flex;
+  margin-left: -15px;
+}
+
+.skills li {
+  display: flex;
+  margin-left
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  width: 40px;
+  align-items: left;
+}
+
 
 /* end of Main content style */
 
 /* footer style */
 footer {
   text-align: center;
+  padding-top: 20px;
   /* background-image:url('../imgs/headshot.jpg'); */
 }
 
@@ -82,20 +139,18 @@ footer {
 
   .profileImage {
     flex:1;
-    text-align: left;
+    text-align: center;
   }
 
-  .profileImage img {
-    width: 90%;
-  }
-
-  .aboutMe {
+  .aboutMe, hr, .software {
     flex: 1;
+    align-content: center;
   }
 
   footer {
     display: flex;
   }
+
   .copy, .socailMedia, .contact {
     flex: 1;
   }

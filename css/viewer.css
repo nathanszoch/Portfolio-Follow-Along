@@ -1,65 +1,49 @@
 @charset "UTF-8";
 /* CSS Document */
 
-.top {
-	margin: 0px 0px;
-  padding-bottom: 0;
-  background-color: #b9c4c5;
-	margin-bottom: -5px;
+header {
+  display: flex;
 }
 
-.active a {
- color: #ffffff;
+.logo {
+  flex:1;
 }
 
-.nav {
- list-style-type: none;
- width: 100%;
- font-family: mr-eaves-modern,sans-serif;
- color: white;
- text-align: center;
- margin-left: 25;
- padding: 0;
- padding-bottom: 30px;
+.logoImage img{
+width: 100%;
 }
 
-.nav li {
-display: inline-block;
-padding-right: 5%;
-padding-left: 3%;
-font-family: mr-eaves-modern,sans-serif;
-font-size: 20px;
-font-style: normal;
-margin-top: -10;
+.name {
+  font-family: Raleway, sans-serif;
+  font-size: 22px;
+  flex-grow: 8;
+  text-align: center;
 }
 
-.nav a:link {
-	text-decoration: none;
-	color: #000000;
-	padding: 7px;
-	padding-top: 7px;
-	padding-right: 7px;
-	padding-bottom: 7px;
-	padding-left: 7px;
-	}
-
-li a {
- text-decoration: none;
- color: black;
+nav {
+  position: relative;
+  flex:1;
 }
 
-li a:hover:not(.active) {
- background-color: #000000;
- color: #b9c4c5;
- padding: .25px, .25px;
+.navButton {
+  text-align: right;
 }
 
-.nav a:hover {
- color: #FFFFFF;
- background-color: #000000;
- transition: .4s ease;
+nav ul.menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: none;
+  position: absolute;
+  right: 0px;
+  text-align: right;
+  font-family: mr-eaves-modern, san-serif;
+  font-size: 22px;
 }
 
+nav:hover ul {
+  display: block;
+}
 
 .title {
     width: 100%;
